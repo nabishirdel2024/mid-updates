@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/nabishirdel2024/mid-updates/main/schemas/version.schema.json",
+  "title": "مانیفست نسخه‌های MID",
+  "description": "قرارداد ساختار فایل version.json — مانیفست شماره نسخه‌های انتشار ژورنال معاملاتی MID و پنل ادمین آن",
+  "type": "object",
+  "required": ["journal", "admin"],
+  "properties": {
+    "journal": {
+      "type": "string",
+      "minLength": 1,
+      "description": "شماره نسخه انتشار ژورنال معاملاتی"
+    },
+    "admin": {
+      "type": "string",
+      "minLength": 1,
+      "description": "شماره نسخه انتشار پنل ادمین"
+    }
+  }
+}
